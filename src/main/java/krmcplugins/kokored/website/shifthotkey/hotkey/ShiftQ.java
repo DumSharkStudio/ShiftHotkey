@@ -32,6 +32,8 @@ public class ShiftQ implements Listener {
                 return;
             }
         }
+        
+        event.setCancelled(plugin.getConfig().getBoolean("hotkeys.shift-q.cancel-event"));
 
         event.setCancelled(true);
 

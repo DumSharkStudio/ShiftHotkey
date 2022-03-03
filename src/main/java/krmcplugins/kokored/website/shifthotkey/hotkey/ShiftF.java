@@ -32,8 +32,8 @@ public class ShiftF implements Listener {
                 return;
             }
         }
-
-        event.setCancelled(true);
+        
+        event.setCancelled(plugin.getConfig().getBoolean("hotkeys.shift-f.cancel-event"));
 
         if (Cooldown.isCooldown(player) != 0) {
             Cooldown.sendError(player);

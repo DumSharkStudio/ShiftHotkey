@@ -1,7 +1,7 @@
 #
 # Don't touch it!
 #
-version: "1.0.1"
+version: "1.0.1-bugfix"
 
 #
 # Cooldown setting
@@ -23,6 +23,7 @@ hotkeys:
   shift-q:
     enable: false
     shift: true
+    cancel-event: true
     # No need "/"
     commands:
       - "command1here"
@@ -31,6 +32,7 @@ hotkeys:
   shift-f:
     enable: false
     shift: true
+    cancel-event: true
     # No need "/"
     commands:
       - ""
