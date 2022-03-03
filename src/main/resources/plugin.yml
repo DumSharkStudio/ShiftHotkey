@@ -1,6 +1,6 @@
 name: ShiftHotkey
 version: '${project.version}'
 main: krmcplugins.kokored.website.shifthotkey.ShiftHotkey
-verison: 1.0.0
+verison: 1.0.1
 api-version: 1.15
 authors: [ Koko_red7214 ]

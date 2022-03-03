@@ -27,8 +27,10 @@ public class ShiftQ implements Listener {
     public void onPlayerDropItem(PlayerDropItemEvent event) {
         Player player = event.getPlayer();
 
-        if (!(player.isSneaking())) {
-            return;
+        if (plugin.getConfig().getBoolean("hotkeys.shift-q.shift") == true) {
+            if (!(player.isSneaking())) {
+                return;
+            }
         }
 
         event.setCancelled(true);

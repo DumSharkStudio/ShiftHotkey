@@ -27,8 +27,10 @@ public class ShiftF implements Listener {
     public void onPlayerDropItem(PlayerSwapHandItemsEvent event) {
         Player player = event.getPlayer();
 
-        if (!(player.isSneaking())) {
-            return;
+        if (plugin.getConfig().getBoolean("hotkeys.shift-f.shift") == true) {
+            if (!(player.isSneaking())) {
+                return;
+            }
         }
 
         event.setCancelled(true);
