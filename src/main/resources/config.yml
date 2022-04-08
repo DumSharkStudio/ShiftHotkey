@@ -1,7 +1,7 @@
 #
 # Don't touch it!
 #
-version: "1.0.1-bugfix"
+version: "1.0.2-1"
 
 #
 # Cooldown setting
@@ -19,6 +19,7 @@ cooldown:
 # Hotkey setting
 #
 hotkeys:
+  bukkit-dispatch: true
   # Press SHIFT and Q
   shift-q:
     enable: false

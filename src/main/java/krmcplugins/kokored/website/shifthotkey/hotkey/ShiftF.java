@@ -44,7 +44,11 @@ public class ShiftF implements Listener {
         Cooldown.add(player);
 
         for (String command : commands) {
-            Bukkit.dispatchCommand(player, command);
+            if (plugin.getConfig().getBoolean("hotkeys.bukkit-dispatch") == true) {
+                Bukkit.dispatchCommand(player, command);
+            }else {
+                player.chat("/" + command);
+            }
         }
     }
     
