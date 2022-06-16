@@ -8,7 +8,7 @@ import krmcplugins.kokored.website.shifthotkey.util.Config;
 
 public final class ShiftHotkey extends JavaPlugin {
 
-    private static String version = "1.0.2-1";
+    private static String version = "1.0.3";
 
     @Override
     public void onEnable() {
