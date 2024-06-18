@@ -1,0 +1,29 @@
+drop:
+  # Enable Swap Item Key? Default is: Q key
+  enable: true
+  # Should we cancel the swap item event?
+  cancel: true
+  # Do players need to press Shift Key to trigger this action?
+  shift: true
+  # Do players require permission to trigger this?
+  perms:
+    enable: false
+    name: shifthotkey.trigger.drop
+  # Actions when triggered
+  # Types:
+  # - [command]: run command as player
+  # - [console]: run command as console
+  # - [chat]: send a chat message as player
+  # Support PlaceholderAPI
+  actions:
+    - "[command] say hi!"
+swap:
+  # Enable Swap Item Key? Default is: F key
+  enable: true
+  cancel: true
+  shift: true
+  perms:
+    enable: false
+    name: shifthotkey.trigger.swap
+  actions:
+    - "[chat] Hello everyone! I'm %player_name%"

@@ -1,6 +1,6 @@
 name: ShiftHotkey
-version: '${project.version}'
-main: krmcplugins.kokored.website.shifthotkey.ShiftHotkey
-verison: 1.0.1-bugfix
-api-version: 1.15
-authors: [ Koko_red7214 ]
+version: '${version}'
+main: com.sharkylab.sharkycraft.shifthotkey.ShiftHotkey
+api-version: '1.15'
+softdepend:
+  - PlaceholderAPI
