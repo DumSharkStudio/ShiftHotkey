@@ -38,6 +38,7 @@ public class ConfigUpdater {
 
         Path toUpdatePath = toUpdate.toPath();
         if (!value.equals(new String(Files.readAllBytes(toUpdatePath), StandardCharsets.UTF_8))) { // if updated contents are not the same as current file contents, update
+            Files.copy(toUpdatePath, (new File(toUpdatePath + ".old")).toPath());
             Files.write(toUpdatePath, value.getBytes(StandardCharsets.UTF_8));
         }
     }
